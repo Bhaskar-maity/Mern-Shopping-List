@@ -1,0 +1,18 @@
+{
+  "name": "mern-shoplist",
+  "version": "1.0.0",
+  "description": "mern shopping list",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Bhaskar Maity",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.1"
+  }
+}
