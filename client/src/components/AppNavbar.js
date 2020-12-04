@@ -11,14 +11,13 @@ import {
 } from 'reactstrap';
 
 class AppNavbar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+    
+        state = {
             isOpen: false
         }
-    }
+    
 
-    toggle() {
+    toggle =() => {
         this.setState({
             isOpen: !this.state.isOpen
         });
