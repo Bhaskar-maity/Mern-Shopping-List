@@ -42,7 +42,9 @@ class ShoopingList extends Component {
                                         color="danger"
                                         size="sm"
                                         onClick={() => {
-                                            
+                                            this.setState  (state => ({
+                                                items: state.items.filter(item => item.id !== id)
+                                            }));
                                         }}
                                     > &times; </Button>
                                     {name}
