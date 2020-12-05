@@ -37,6 +37,14 @@ class ShoopingList extends Component {
                         {items.map(({id, name}) =>(
                             <CSSTransition key={id} timeout={500} classNames="fade">
                                 <ListGroupItem>
+                                    <Button
+                                        className="remove-btn"
+                                        color="danger"
+                                        size="sm"
+                                        onClick={() => {
+                                            
+                                        }}
+                                    > &times; </Button>
                                     {name}
                                 </ListGroupItem>
                             </CSSTransition>
