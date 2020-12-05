@@ -6,7 +6,7 @@ import {v1 as uuid} from 'uuid';
 
 class ShoopingList extends Component {
     state = {
-        item: [
+        items: [
             { id: uuid(), name: 'a'},
             { id: uuid(), name: 'b'},
             { id: uuid(), name: 'c'},
@@ -26,11 +26,23 @@ class ShoopingList extends Component {
                     const name = prompt('Enter Item');
                     if(name) {
                         this.setState(state => ({
-                            item: [...state.item, { id: uuid(), name}]
+                            items: [...state.items, { id: uuid(), name}]
                         }));
                     }
                 }}
                 >Add Item</Button>
+
+                <ListGroup>
+                    <TransitionGroup className ="shopping-list">
+                        {items.map(({id, name}) =>(
+                            <CSSTransition key={id} timeout={500} classNames="fade">
+                                <ListGroupItem>
+                                    {name}
+                                </ListGroupItem>
+                            </CSSTransition>
+                        ))}
+                    </TransitionGroup>
+                </ListGroup>
             </Container>
 
         )
