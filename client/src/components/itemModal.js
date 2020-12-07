@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
+import {v1 as uuid} from 'uuid';
 
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
@@ -18,6 +19,21 @@ class ItemModal extends Component {
 
     onChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
+    };
+
+    onSubmit = e => {
+        e.preventDefault();
+
+        const newItem = {
+            id: uuid(),
+            name: this.state.name
+        }
+
+        // Add ite via addItem action
+        this.props.addItem(newItem);
+
+        //closing modal
+        this.toggle();
     };
 
     render() {
@@ -69,4 +85,9 @@ class ItemModal extends Component {
 
 }
 
-export default connect()(ItemModal);
+
+const mapStateToProps = state => ({
+    item: state.item
+});
+
+export default connect(mapStateToProps, { addItem })(ItemModal);
