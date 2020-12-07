@@ -6,3 +6,10 @@ export const getItems = () => {
         
     };
 };
+
+export const deleteItems = (id) => {
+    return {
+        type: DELETE_ITEMS,
+        payload: id
+    };
+};
