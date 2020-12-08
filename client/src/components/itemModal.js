@@ -40,8 +40,8 @@ class ItemModal extends Component {
             <div>
                 
                 <Button
-                    color="dark"
-                    style={{marginBottom: '2rem'}}
+                    
+                    style={{marginBottom: '2rem', background: '#424242'}}
                     onClick={this.toggle}
                 >Add Item</Button>
 
@@ -69,8 +69,8 @@ class ItemModal extends Component {
                                 />
 
                                 <Button
-                                  color="dark"
-                                  style={{marginTop: '2rem'}}
+                                  
+                                  style={{marginTop: '2rem',background: '#424242'}}
                                   block
                                 >Add Item</Button>
                             </FormGroup>
