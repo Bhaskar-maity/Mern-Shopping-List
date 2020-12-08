@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import AppNavbar from './components/AppNavbar';
 import ShoopingList from './components/ShoppingList';
 import ItemModal from './components/itemModal';
