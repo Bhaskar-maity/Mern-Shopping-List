@@ -1,5 +1,5 @@
-# Mern-Shopping-List
-Shopping List web app by MongoDb, Express, React, Node 
+# Shopping Notebook
+Help to list out shopping items by adding and deleting items. Using Mongodb, React, Express, Node.js.
 
 
 ## Technologies used 
