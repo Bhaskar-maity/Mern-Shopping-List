@@ -17,7 +17,7 @@ Help to list out shopping items by adding and deleting items. Using Mongodb, Rea
 
 ### Clone this Repo 
 ```
-git clone https://github.com/Bhaskar-maity/Mern-Shopping-List.git
+git clone https://github.com/Bhaskar-maity/Shopping-Notebook.git
 ```
 ## For any queries/doubts:
 
